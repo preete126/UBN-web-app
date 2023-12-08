@@ -1,0 +1,347 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.background{
+    background-image: url('../images/bg-image1.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    padding: 2.94rem 4.75rem;
+}
+.parts{
+    height: 35.9rem;
+    margin-top: 5rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.slide{
+    width: 31.75rem;
+    margin-top: auto;
+    color: var(--base-white, #FFF);
+}
+.form-layout{
+    height: 100%;
+    border: 1px solid yellow;
+    width: 23.9rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.90);
+    display: inline-flex;
+    padding: 3.75rem 1.75rem 2.75rem 1.75rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.9375rem;
+}
+.smalltext{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 325;
+    line-height: 1.5rem;
+    padding: 15px 0;
+}
+.bigtext{
+    color: var(--base-white, #FFF);
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+}
+.welcome{
+    color: var(--brand-indigo, #263F67);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.name{
+    color: var(--brand-indigo, #263F67);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login-text{
+    color: var(--grey-1, #333);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 171.429% */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+input::placeholder{
+    color: var(--grey-3, #999);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+input[type="text"]{
+    display: flex;
+    padding: 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-4, #CCC);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    outline: none !important;
+}
+.password-container{
+    display: flex;
+    padding: 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-4, #CCC);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    background-color: white;
+}
+.password-container input[type="password"]{
+    display: flex;
+    width: 100%;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    outline: none !important;
+    border: none !important;
+    background-color: transparent;
+}
+.forgotten-password{
+    display: flex;
+    padding: 0.75rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--brand-cyan, #0AB8F2);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 171.429% */
+    border: none !important;
+    outline: none !important;
+    background-color: transparent;
+}
+.login-btn{
+    display: flex;
+    border: none !important;
+    outline: none !important;
+    align-self: stretch;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 6.25rem;
+    background: var(--brand-cyan, #0AB8F2);
+    color: var(--base-white, #FFF);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 1.225rem */
+}
+.switch{
+    display: inline-flex;
+    color: var(--grey-1, #333);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 325;
+    line-height: 1.5rem; /* 171.429% */
+    margin-top: 4rem;
+}
+.new{
+    color: var(--brand-cyan, #0AB8F2);
+    text-decoration: none;
+    font-weight: 600;
+}
+.signupOption{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 0.8rem;
+    align-self: stretch;
+    gap: 0.7rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    text-align: start;
+    border: none;
+}
+.signupOption .account-holder{
+    color: var(--grey-2, #666);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.125rem; /* 128.571% */
+}
+.signupOption .online-banking{
+    color: var(--base-indigo, #263F67);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+.squareimg{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: var(--grey-7, rgba(249, 249, 249, 0.98));
+}
+.credentials-parts{
+    width: 100%;
+    background: var(--base-white, #FFF);
+    height: 56.625rem;
+    display: flex;
+}
+.outline{
+    width: 34.125rem;
+    height: 56.625rem;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #263F67 0%, #000 100%);
+}
+.outline-cover{
+    width: 27.0625rem;
+    height: 56.625rem;
+    flex-shrink: 0;
+    padding: 2.94rem 4.75rem;
+    // padding-left: 4.75rem;
+    background-image: url("../images/outline-bg.png");
+}
+.outline-content{
+    margin-top: 12rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    font-style: normal;
+}
+.outline-header{
+    color: var(--base-white, #FFF);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem; /* 150% */
+}
+.caption{
+    color: var(--grey-4, #CCC);
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem; /* 171.429% */
+}
+.step{
+    color: var(--grey-6, #F2F2F2);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 1.125rem; /* 128.571% */
+}
+.content{
+    padding: 8.06rem 4.75rem;
+}
+.back-btn{
+    display: flex;
+    width: 4.8125rem;
+    padding: 0.875rem 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: var(--brand-cyan, #0AB8F2);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 1.225rem */
+}
+.acc-detail-form{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.acc-detail-text{
+    color: var(--grey-3, #999);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5rem; /* 150% */
+}
+.info{
+    display: inline-flex;
+    padding: 0.625rem 1.625rem 1.25rem 0.625rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    border: 0.5px solid var(--brand-cyan, #0AB8F2);
+    background: rgba(10, 184, 242, 0.05);  
+    color: var(--grey-2, #666);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.125rem; /* 128.571% */ 
+}
+.content-cover{
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+}
+.otp-input{
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-4, #CCC);
+    background: var(--base-white, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.success{
+    width: 24.375rem;
+    min-height: 100vh;
+    padding: 3.69rem 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+}
+.success-text{
+    color: var(--base-black, #111);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 133.333% */
+}
+// *{
+//     border: 1px solid red;
+// }
+
+
+@media(max-width:1029px){
+    .slide{
+        display: none !important;
+    }
+    .parts{
+        justify-content: center;
+    }
+}
+@media(max-width:576px) {
+    .parts{
+        margin-right: 0rem;
+    }
+    .form-layout{
+        padding: 1.75rem 0.75rem 1.75rem 0.75rem;
+    }
+}
